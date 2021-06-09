@@ -1,0 +1,22 @@
+﻿@model WebApplication5.Models.Hospital
+@{
+    ViewData["Title"] = "Create";
+}
+<h2>@ViewData["Title"]</h2>
+<h4>Hospital</h4>
+
+<form method="post">
+
+    <label>Name</label> <br />
+    <input type="text" name="Name" /> <br />
+
+    <label>Address</label> <br />
+    <input type="text" name="Address" /> <br />
+
+    <label>Phones</label> <br />
+    <input type="text" name="Phones" /> <br />
+
+    <input type="submit" value="Create"/>
+</form>
+
+<a asp-action="Index">Back to List</a>

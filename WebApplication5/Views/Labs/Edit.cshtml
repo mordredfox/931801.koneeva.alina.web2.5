@@ -1,0 +1,16 @@
+﻿@model WebApplication5.Models.Lab
+@{
+    ViewData["Title"] = "Edit lab";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-route-id="@Model.Id">
+
+    <label>Name</label> <br />
+    <input type="text" name="Name" value="@Model.Name"/> <br />
+
+    <label>Address</label> <br />
+    <input type="text" name="Address" value="@Model.Address"/> <br />
+
+    <input type="submit" value="Save changes"/>
+</form>

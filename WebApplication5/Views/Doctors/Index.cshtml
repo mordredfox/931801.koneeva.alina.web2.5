@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication5.Models.Doctor>
+@{
+    ViewData["Title"] = "Doctors";
+}
+<h2>@ViewData["Title"]</h2>
+<a asp-action="Create">Create new</a>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Speciality</th>
+        <th></th>
+    </tr>
+    @foreach(var d in Model)
+    {
+        <tr>
+            <td>@d.Name</td>
+            <td>@d.Speciality</td>
+            <td><a asp-action="Edit" asp-route-id="@d.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@d.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@d.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

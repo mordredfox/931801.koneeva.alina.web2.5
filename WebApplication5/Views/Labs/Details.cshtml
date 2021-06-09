@@ -1,0 +1,15 @@
+﻿@model WebApplication5.Models.Lab
+@{
+    ViewData["Title"] = Model.Name;
+}
+<h2>Lab - @ViewData["Title"]</h2>
+<div>
+    <label>Address</label>
+    <div>@Model.Address</div>
+
+</div>
+<br/>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,24 @@
+﻿@model WebApplication5.Models.Hospital
+@{
+    ViewData["Title"] = "Delete hospital";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div>
+        <label>Name</label>
+        <div>@Html.DisplayFor(model => model.Name)</div>
+
+        <label>Address</label>
+        <div>@Html.DisplayFor(model => model.Address)</div>
+
+        <label>Phones</label>
+        <div>@Html.DisplayFor(model => model.Phones)</div>
+
+    <div>
+        <form asp-controller="Hospitals" asp-action="Delete" method="post">
+            <div>
+                <input type="submit" value="Удалить" />
+            </div>
+        </form>
+    </div>
+</div>

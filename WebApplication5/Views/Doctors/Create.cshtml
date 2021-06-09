@@ -1,0 +1,19 @@
+﻿@model WebApplication5.Models.Doctor
+@{
+    ViewData["Title"] = "Create";
+}
+<h2>@ViewData["Title"]</h2>
+<h4>Doctor</h4>
+
+<form method="post">
+
+    <label>Name</label> <br />
+    <input type="text" name="Name" /> <br />
+
+    <label>Speciality</label> <br />
+    <input type="text" name="Speciality" /> <br />
+
+    <input type="submit" value="Create"/>
+</form>
+
+<a asp-action="Index">Back to List</a>
